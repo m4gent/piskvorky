@@ -1,3 +1,3 @@
 Testováno v: Brave 1.90.124
 
-URL aplikace: (doplň po nasazení)
+URL aplikace: https://m4gent.github.io/piskvorky/
