@@ -1,7 +1,7 @@
 Piškvorky (Tic Tac Toe) – Webová aplikace
 ==========================================
 
-Testováno v: Google Chrome 124
+Testováno v: Brave 1.90.124
 
 Soubory:
   index.html    – hlavní stránka (hra)
