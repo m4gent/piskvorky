@@ -1,0 +1,101 @@
+/* navigace */
+nav {
+  background-color: #448;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+nav a.active {
+  color: #D68;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* obecne */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #222;
+  text-align: center;
+}
+
+#obsah {
+  background-color: #448;
+  border: 2px solid #222;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+h1 {
+  color: #D68;
+}
+
+p {
+  color: #999;
+}
+
+input {
+  background-color: #333;
+  color: #999;
+  border-radius: 5px;
+}
+
+/* herni tabulka */
+table#pole {
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+table#pole td {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #448;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 48px;
+  cursor: pointer;
+  background-color: #333;
+  color: #D68;
+}
+
+table#pole td:hover {
+  background-color: #444;
+}
+
+table#pole td.vyhra {
+  background-color: #394;
+}
+
+/* tlacitka */
+button {
+  border-radius: 10px;
+  background-color: #333;
+  color: #D68;
+  padding: 8px 16px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* polozka v historii */
+.zaznam {
+  color: #999;
+  background-color: #346;
+  border: 1px solid #222;
+  border-radius: 10px;
+  padding: 8px;
+  margin-top: 8px;
+  width: 300px;
+}

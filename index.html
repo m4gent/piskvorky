@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <title>Piskvorky - Hra</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="active">Hra</a>
+    <a href="pravidla.html">Pravidla</a>
+    <a href="historie.html">Historie</a>
+  </nav>
+
+  <div id="obsah">
+    <h1>Piskvorky</h1>
+
+    <!-- nastaveni hracu -->
+    <div id="nastaveni">
+      <p>
+        <label>Hrac 1 (X): <input type="text" id="jmeno1" placeholder="Zadej jmeno" /></label>
+      </p>
+      <p>
+        <label>Hrac 2 (O): <input type="text" id="jmeno2" placeholder="Zadej jmeno" /></label>
+      </p>
+      <button onclick="startHra()">Zacit hru</button>
+      <p id="chyba" style="color: red;"></p>
+    </div>
+
+    <!-- herni pole, na zacatku skryte -->
+    <div id="hra" style="display: none;">
+
+      <p id="stav">Na tahu: </p>
+
+      <p>
+        <strong id="jmeno1Skore">Hrac 1</strong>: <strong id="skore1">0</strong>
+        &nbsp;vs&nbsp;
+        <strong id="jmeno2Skore">Hrac 2</strong>: <strong id="skore2">0</strong>
+      </p>
+
+      <!-- 3x3 tabulka jako herni pole -->
+      <table id="pole">
+        <tr>
+          <td onclick="klik(0)"></td>
+          <td onclick="klik(1)"></td>
+          <td onclick="klik(2)"></td>
+        </tr>
+        <tr>
+          <td onclick="klik(3)"></td>
+          <td onclick="klik(4)"></td>
+          <td onclick="klik(5)"></td>
+        </tr>
+        <tr>
+          <td onclick="klik(6)"></td>
+          <td onclick="klik(7)"></td>
+          <td onclick="klik(8)"></td>
+        </tr>
+      </table>
+
+      <button onclick="noveKolo()">Nove kolo</button>
+      <button onclick="konecHry()">Konec hry</button>
+
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
